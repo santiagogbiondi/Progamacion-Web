@@ -3,32 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>itba.com</title>
+    <title>itbashop.com</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap">
 </head>
+
+
 <body>
-    <h1>UNIVERSIDAD UADE</h1>
-    <p>Parrafos</p>
-    <p id='Lorem'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias rerum dolor ipsum totam eligendi doloribus aliquam nulla numquam eum accusamus fugit mollitia nobis eius error reprehenderit repudiandae, veniam hic quidem.
-    Blanditiis, dicta dolores. Vitae placeat harum minima temporibus, unde magnam quam modi nihil dolorum vero ipsam facilis commodi? Ex a sint, officia quod laborum impedit quas! Quam molestias quod eum?
-    Deleniti quae placeat molestiae quasi accusamus officiis ipsa delectus voluptates commodi minima, beatae labore id aliquam eveniet. Esse exercitationem animi soluta recusandae, corporis reprehenderit voluptatibus sapiente fugiat, labore, dicta nobis?
-    Cumque voluptatibus quia voluptatem nihil libero quae sequi? Doloribus omnis vitae ex consequuntur nulla ducimus temporibus, blanditiis consequatur rerum eum! Explicabo quod cum accusantium aliquam delectus necessitatibus iure voluptatem aut.
-    Unde rerum soluta repellendus id, repudiandae modi cum qui magni repellat. Recusandae ipsum ea, deleniti iure, accusantium numquam officia fugit ullam velit qui maxime provident sunt, atque totam aliquam? Amet!</p> 
+    
+    <header>
+        <h1>Culture District</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <a href="https://www.itba.edu.ar" target="'_blank"><img src="./images/uade.png" alt="foto ITBA" height="'400px" width="400px"><a href=""></a>
 
-    <ol type="I" start='5'>
-        <li class="liRojo">HOLA</li>
-        <li class="liRojo">HOLA</li>
-        <li class="liRojo">HOLA</li>
-        <li>hola</li>
-        <li>kkk</li>
-        <li></li>
-        <li></li>
-        <li>hola</li>
-        <li></li>
-        <li></li>
-    </ol>
-    <ul></ul>
+    <div class="container1">
+        <h2>CULTURE AS A STYLE</h2>
+        <p>Descubre ropa y accsesorios de distintos artistas.</p>
+        <a href="coleccion.html" class="boton1">Nueva Colección</a>
+    </div>
+    
+    <div class="container2">
+        <button class="category" onclick="accion1()">
+            <h3 class="articulos">Remeras y Abrigos</h3>
+            <img src="images/yzyhoodie.jpg" alt="Remeras">
+        </button>
+        <button class="category" onclick="accion2()">
+            <h3 class="articulos">Sneakers</h3>
+            <img src="images/travissnk.jpg" alt="Sneakers">
+        </button>
+        <button class="category" onclick="accion3()">
+            <h3 class="articulos">Pantalones</h3>
+            <img src="images/jeans.webp" alt="Pantalones">
+        </button>
+    </div>
+    
+    
+
+    <div class="quienes-somos">
+        <h2>¿QUIÉNES SOMOS?</h2>
+        <p>Somos una tienda de ropa comprometida con la calidad y la moda.</p>
+
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section izq">
+                <h3>Santiago Biondi</h3>
+                <p>Pagina Web en proceso</p>
+                <div class="contact">
+                    <span><i class="telefono"></i> 911-1010-1010</span>
+                    <span><i class="fas fa-envelope"></i> info@culturedistrict.com</span>
+                </div>
+            </div>
+            <div class="footer-section center">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="coleccion.html">Nueva Colección</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contactar">
+                <h3>Contacto</h3>
+                <form action="#">
+                    <input type="email" name="email" class="text-input contact-input" placeholder="Tu correo electrónico...">
+                    <textarea name="message" class="text-input contact-input" placeholder="Tu mensaje..."></textarea>
+                    
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            Culture District
+        </div>
+    </footer>
 </body>
 </html>

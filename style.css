@@ -1,17 +1,272 @@
-body{
-    background-color: Tan;
+/* Establece que el cuerpo del documento use la fuente Arial o una fuente genérica sans-serif */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1b1b1b; /* Gris medio oscuro */
+    color: #fff;
 }
 
-h1{
-    font-size: 45px;
-    color: darkmagenta;
+/* Estilos para el encabezado */
+header {
+    background-color: #070000; /* Establece el color de fondo del encabezado en gris oscuro */
+    color: #ffffff; /* Establece el color del texto en blanco */
+    padding: 10px; /* Añade un relleno de 20px alrededor del encabezado */
 }
 
-#Lorem{
-    color: green
+/* Estilos para el título dentro del encabezado */
+header h1 {
+    margin: 0; /* Elimina el margen superior e inferior predeterminado del título */
+    font-family: 'Russo One', sans-serif; /* Aplica la fuente Russo One */
+    font-size: 35px; /* Tamaño de la fuente */
 }
 
-.liRojo{
-    color: red
+/* Estilos para la barra de navegación */
+nav ul {
+    list-style-type: none; /* Elimina los puntos de lista predeterminados */
+    padding: 0; /* Elimina el relleno predeterminado de la lista */
 }
+
+/* Estilos para cada elemento de la lista de navegación */
+nav ul li {
+    display:inline; /* Hace que los elementos de la lista se muestren en línea */
+    margin-right: 20px; /* Añade un margen derecho de 20px entre cada elemento de la lista */
+}
+
+/* Estilos para los enlaces dentro de la lista de navegación */
+nav ul li a {
+    color: #fff; /* Establece el color del texto de los enlaces en blanco */
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+}
+
+/* Estilos para la sección del héroe */
+.container1 {
+    background-image: url('images/traviswallpaper.jpg'); /* Establece una imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-position:center;
+    color: #ffffff; /* Establece el color del texto en blanco */
+    text-align: left; 
+    padding: 100px 90px; /* Añade relleno alrededor del contenido */
+    margin: 0;
+}
+
+.container1 h2 {
+    font-size: 2.5rem; /* Tamaño del título */
+    margin-bottom: 20px; /* Espacio inferior */
+    font-family: 'Russo One', sans-serif; /* Aplica la fuente Russo One */
+    font-size: 35px; /* Tamaño de la fuente */
+}
+
+.container1 p {
+    font-size: 1.1rem; /* Tamaño del texto */
+    margin-bottom: 30px; /* Espacio inferior */
+}
+
+.container1 .boton1 {
+    display: inline-block; /* Hace que el botón sea un bloque en línea */
+    background-color: #333; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 20px; /* Añade relleno alrededor del botón */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    border-radius: 10px; /* Borde redondeado */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar el color de fondo */
+}
+
+.container1 .boton1:hover {
+    background-color: #600073; /* Cambia el color de fondo al pasar el mouse sobre el botón */
+}
+
+
+.container2 {
+    display: flex; /* Utiliza un diseño de caja flexible */
+    justify-content: space-between; /* Distribuye uniformemente los elementos */
+    padding: 50px 90px;
+    margin: 0;
+}
+
+.container2 h3{
+    color: white;
+}
+
+.category img {
+    max-width: 250px; /* Establece un ancho máximo para las imágenes */
+    max-height: 250px; /* Establece una altura máxima para las imágenes */
+    margin: 0;
+}
+
+
+.category {
+    flex: 1;
+    text-align: center;
+    border: none; /* Elimina el borde del botón */
+    background: none; /* Elimina el fondo del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    position: relative;
+}
+
+.category img {
+    width: 250px;
+    height: 250px;
+    border-radius: 20%; /* Hace que la imagen tenga bordes redondeados */
+    transition: opacity 0.3s ease;
+}
+
+.category:hover img {
+    opacity: 0.7; /* Reduce la opacidad al pasar el mouse por encima */
+}
+
+
+
+.quienes-somos {
+    background-color: #000000;
+    background-image: url();
+    background-position: center;
+    padding: 50px;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Evita que el contenido se desborde */
+}
+
+.right-image {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    width: 15%; /* Establece el ancho deseado de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.quienes-somos h2 {
+    margin-bottom: 40px; /* Espacio inferior */
+    margin-top: 30px; /* Ajusta este valor para mover el texto hacia arriba */
+    font-family: 'Russo One', sans-serif; /* Aplica la fuente Russo One */
+    font-size: 35px; /* Tamaño de la fuente */
+}
+
+
+
+
+
+
+
+/* Estilos para el footer */
+footer {
+    background-color: #333; /* Color de fondo del footer */
+    color: #fff; /* Color del texto */
+    padding: 50px 0; /* Añade relleno arriba y abajo */
+}
+
+/* Estilos para el contenido del footer */
+.footer-content {
+    display: flex; /* Usa un diseño de caja flexible para los elementos internos */
+    flex-wrap: wrap; /* Permite que los elementos internos se envuelvan */
+    justify-content: space-around; /* Distribuye uniformemente los elementos horizontalmente */
+}
+
+/* Estilos para cada sección del footer */
+.footer-section {
+    flex-basis: 25%; /* Establece el ancho base de cada sección */
+    padding: 20px; /* Añade relleno alrededor de cada sección */
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+/* Estilos específicos para la sección de contacto */
+.contactar {
+    margin-top: 0px; /* Espacio superior */
+}
+
+/* Estilos para el formulario de contacto */
+.contactar textarea {
+    height: 100px; /* Altura del área de texto */
+}
+
+/* Estilos para la sección de enlaces rápidos */
+.center ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el relleno de la lista */
+}
+
+.center li {
+    margin-top: 10px; /* Espacio superior entre elementos */
+}
+
+/* Estilos para el pie de página inferior */
+.footer-bottom {
+    text-align: center; /* Centra el texto horizontalmente */
+    padding-top: 15px; /* Añade espacio encima */
+    background-color: #222; /* Color de fondo más oscuro */
+}
+
+
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    .container1 {
+        padding: 50px 20px; /* Ajusta el relleno */
+        text-align: center; /* Centra el contenido horizontalmente */
+    }
+
+    .container1 h2 {
+        font-size: 2rem; /* Reduce el tamaño del título */
+        margin-bottom: 15px; /* Reduzca el espacio inferior */
+    }
+
+    .container1 p {
+        font-size: 1rem; /* Reduce el tamaño del texto */
+        margin-bottom: 20px; /* Reduzca el espacio inferior */
+    }
+
+    .container1 .boton1 {
+        padding: 8px 16px; /* Ajusta el relleno del botón */
+        font-size: 0.9rem; /* Reduce el tamaño del texto del botón */
+    }
+
+    /* Ajustes generales para el footer */
+    footer {
+        padding: 30px 0; /* Ajusta el relleno */
+    }
+
+    /* Ajustes para el contenido del footer */
+    .footer-content {
+        flex-direction: column; /* Cambia la dirección del flexbox a columna */
+        align-items: center; /* Centra los elementos en el eje transversal */
+    }
+
+    /* Ajustes para cada sección del footer */
+    .footer-section {
+        flex-basis: auto; /* Restaura el ancho base automático */
+        margin-bottom: 20px; /* Agrega espacio entre secciones */
+    }
+
+    /* Ajustes para el pie de página inferior */
+    .footer-bottom {
+        padding-top: 10px; /* Ajusta el espacio encima */
+    }
+
+
+
+    .container2 {
+        flex-direction: column; /* Cambia la dirección del flexbox a columna */
+        align-items: center; /* Centra los elementos en el eje transversal */
+        padding: 50px 20px; /* Ajusta el relleno */
+    }
+
+
+    .container2 h3{
+        color: white;
+    }
+    
+    .category {
+        margin-bottom: 20px; /* Agrega espacio entre las categorías */
+    }
+
+    .category img {
+        width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+        max-width: 250px; /* Limita el ancho máximo de la imagen */
+        max-height: 250px; /* Limita la altura máxima de la imagen */
+        border-radius: 20%; /* Mantiene los bordes redondeados */
+    }
+}
+
 
