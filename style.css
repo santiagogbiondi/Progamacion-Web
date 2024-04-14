@@ -1,85 +1,89 @@
-/* Establece que el cuerpo del documento use la fuente Arial o una fuente genérica sans-serif */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1b1b1b; /* Gris medio oscuro */
+    background-color: #1b1b1b;
     color: #fff;
 }
 
-/* Estilos para el encabezado */
+
 header {
-    background-color: #070000; /* Establece el color de fondo del encabezado en gris oscuro */
-    color: #ffffff; /* Establece el color del texto en blanco */
-    padding: 10px; /* Añade un relleno de 20px alrededor del encabezado */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #070000; 
+    color: #ffffff; 
+    padding: 10px; 
 }
 
-/* Estilos para el título dentro del encabezado */
+
 header h1 {
-    margin: 0; /* Elimina el margen superior e inferior predeterminado del título */
-    font-family: 'Russo One', sans-serif; /* Aplica la fuente Russo One */
-    font-size: 35px; /* Tamaño de la fuente */
+    margin: 0; 
+    font-family: 'Russo One', sans-serif; 
+    font-size: 30px; 
 }
 
-/* Estilos para la barra de navegación */
+
 nav ul {
-    list-style-type: none; /* Elimina los puntos de lista predeterminados */
-    padding: 0; /* Elimina el relleno predeterminado de la lista */
+    list-style-type: none; 
+    padding: 0; 
 }
 
-/* Estilos para cada elemento de la lista de navegación */
+
 nav ul li {
-    display:inline; /* Hace que los elementos de la lista se muestren en línea */
-    margin-right: 20px; /* Añade un margen derecho de 20px entre cada elemento de la lista */
+    display:inline; 
+    margin-right: 20px; 
 }
 
-/* Estilos para los enlaces dentro de la lista de navegación */
+
 nav ul li a {
-    color: #fff; /* Establece el color del texto de los enlaces en blanco */
-    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+    color: #fff; 
+    text-decoration: none; 
 }
 
-/* Estilos para la sección del héroe */
+
 .container1 {
-    background-image: url('images/traviswallpaper.jpg'); /* Establece una imagen de fondo */
-    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-image: url('images/traviswallpaper.jpg'); 
+    background-size: cover; 
     background-position:center;
-    color: #ffffff; /* Establece el color del texto en blanco */
+    color: #ffffff; 
     text-align: left; 
-    padding: 100px 90px; /* Añade relleno alrededor del contenido */
+    padding: 100px 90px; 
     margin: 0;
 }
 
 .container1 h2 {
-    font-size: 2.5rem; /* Tamaño del título */
-    margin-bottom: 20px; /* Espacio inferior */
-    font-family: 'Russo One', sans-serif; /* Aplica la fuente Russo One */
-    font-size: 35px; /* Tamaño de la fuente */
+    font-size: 2.5rem; 
+    margin-bottom: 20px; 
+    font-family: 'Russo One', sans-serif; 
+    font-size: 35px; 
 }
 
 .container1 p {
-    font-size: 1.1rem; /* Tamaño del texto */
-    margin-bottom: 30px; /* Espacio inferior */
+    font-size: 1.1rem; 
+    margin-bottom: 30px; 
 }
 
 .container1 .boton1 {
-    display: inline-block; /* Hace que el botón sea un bloque en línea */
-    background-color: #333; /* Color de fondo del botón */
-    color: #fff; /* Color del texto del botón */
-    padding: 10px 20px; /* Añade relleno alrededor del botón */
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-    border-radius: 10px; /* Borde redondeado */
-    transition: background-color 0.3s ease; /* Transición suave al cambiar el color de fondo */
+    display: inline-block; 
+    background-color: #333; 
+    color: #fff; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    border-radius: 10px; 
+    transition: background-color 0.3s ease; 
 }
 
 .container1 .boton1:hover {
-    background-color: #600073; /* Cambia el color de fondo al pasar el mouse sobre el botón */
+    background-color: #600073; 
 }
 
 
 .container2 {
-    display: flex; /* Utiliza un diseño de caja flexible */
-    justify-content: space-between; /* Distribuye uniformemente los elementos */
+    display: flex; 
+    justify-content: space-between; 
     padding: 50px 90px;
     margin: 0;
 }
@@ -89,8 +93,8 @@ nav ul li a {
 }
 
 .category img {
-    max-width: 250px; /* Establece un ancho máximo para las imágenes */
-    max-height: 250px; /* Establece una altura máxima para las imágenes */
+    max-width: 250px; 
+    max-height: 250px;
     margin: 0;
 }
 
@@ -98,21 +102,21 @@ nav ul li a {
 .category {
     flex: 1;
     text-align: center;
-    border: none; /* Elimina el borde del botón */
-    background: none; /* Elimina el fondo del botón */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border: none;
+    background: none;
+    cursor: pointer; 
     position: relative;
 }
 
 .category img {
     width: 250px;
     height: 250px;
-    border-radius: 20%; /* Hace que la imagen tenga bordes redondeados */
+    border-radius: 20%; 
     transition: opacity 0.3s ease;
 }
 
 .category:hover img {
-    opacity: 0.7; /* Reduce la opacidad al pasar el mouse por encima */
+    opacity: 0.7; 
 }
 
 
@@ -124,7 +128,7 @@ nav ul li a {
     padding: 50px;
     text-align: center;
     position: relative;
-    overflow: hidden; /* Evita que el contenido se desborde */
+    overflow: hidden; 
 }
 
 .right-image {
@@ -132,123 +136,100 @@ nav ul li a {
     top: 50%;
     right: 10%;
     transform: translateY(-50%);
-    width: 15%; /* Establece el ancho deseado de la imagen */
-    height: auto; /* Mantiene la proporción de la imagen */
+    width: 15%; 
+    height: auto;
 }
 
 .quienes-somos h2 {
-    margin-bottom: 40px; /* Espacio inferior */
-    margin-top: 30px; /* Ajusta este valor para mover el texto hacia arriba */
-    font-family: 'Russo One', sans-serif; /* Aplica la fuente Russo One */
-    font-size: 35px; /* Tamaño de la fuente */
+    margin-bottom: 40px; 
+    margin-top: 30px; 
+    font-family: 'Russo One', sans-serif; 
+    font-size: 35px; 
 }
 
 
 
 
-
-
-
-/* Estilos para el footer */
 footer {
-    background-color: #333; /* Color de fondo del footer */
-    color: #fff; /* Color del texto */
-    padding: 50px 0; /* Añade relleno arriba y abajo */
+    background-color: #333; 
+    color: #fff; 
+    padding: 50px 0; 
 }
 
-/* Estilos para el contenido del footer */
+
 .footer-content {
-    display: flex; /* Usa un diseño de caja flexible para los elementos internos */
-    flex-wrap: wrap; /* Permite que los elementos internos se envuelvan */
-    justify-content: space-around; /* Distribuye uniformemente los elementos horizontalmente */
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around; 
 }
 
-/* Estilos para cada sección del footer */
+
 .footer-section {
-    flex-basis: 25%; /* Establece el ancho base de cada sección */
-    padding: 20px; /* Añade relleno alrededor de cada sección */
-    text-align: center; /* Centra el contenido horizontalmente */
+    flex-basis: 25%; 
+    padding: 20px; 
+    text-align: center; 
 }
 
-/* Estilos específicos para la sección de contacto */
+
 .contactar {
-    margin-top: 0px; /* Espacio superior */
+    margin-top: 0px; 
 }
 
-/* Estilos para el formulario de contacto */
+
 .contactar textarea {
-    height: 100px; /* Altura del área de texto */
+    height: 100px; 
 }
 
-/* Estilos para la sección de enlaces rápidos */
+
 .center ul {
-    list-style: none; /* Elimina los puntos de la lista */
-    padding: 0; /* Elimina el relleno de la lista */
+    list-style: none; 
+    padding: 0; 
 }
 
 .center li {
-    margin-top: 10px; /* Espacio superior entre elementos */
+    margin-top: 10px; 
 }
 
-/* Estilos para el pie de página inferior */
+.center ul li a {
+    color: white; 
+}
+
 .footer-bottom {
-    text-align: center; /* Centra el texto horizontalmente */
-    padding-top: 15px; /* Añade espacio encima */
-    background-color: #222; /* Color de fondo más oscuro */
+    text-align: center; 
+    padding-top: 15px; 
+    background-color: #222; 
 }
 
 
 
-/* Estilos para dispositivos móviles */
+
 @media only screen and (max-width: 768px) {
     .container1 {
-        padding: 50px 20px; /* Ajusta el relleno */
-        text-align: center; /* Centra el contenido horizontalmente */
+        padding: 50px 20px; 
+        text-align: center; 
     }
 
     .container1 h2 {
-        font-size: 2rem; /* Reduce el tamaño del título */
-        margin-bottom: 15px; /* Reduzca el espacio inferior */
+        font-size: 2rem; 
+        margin-bottom: 15px; 
     }
 
     .container1 p {
-        font-size: 1rem; /* Reduce el tamaño del texto */
-        margin-bottom: 20px; /* Reduzca el espacio inferior */
+        font-size: 1rem; 
+        margin-bottom: 20px; 
     }
 
     .container1 .boton1 {
-        padding: 8px 16px; /* Ajusta el relleno del botón */
-        font-size: 0.9rem; /* Reduce el tamaño del texto del botón */
-    }
-
-    /* Ajustes generales para el footer */
-    footer {
-        padding: 30px 0; /* Ajusta el relleno */
-    }
-
-    /* Ajustes para el contenido del footer */
-    .footer-content {
-        flex-direction: column; /* Cambia la dirección del flexbox a columna */
-        align-items: center; /* Centra los elementos en el eje transversal */
-    }
-
-    /* Ajustes para cada sección del footer */
-    .footer-section {
-        flex-basis: auto; /* Restaura el ancho base automático */
-        margin-bottom: 20px; /* Agrega espacio entre secciones */
-    }
-
-    /* Ajustes para el pie de página inferior */
-    .footer-bottom {
-        padding-top: 10px; /* Ajusta el espacio encima */
+        padding: 8px 16px; 
+        font-size: 0.9rem; 
     }
 
 
-
+    
     .container2 {
-        flex-direction: column; /* Cambia la dirección del flexbox a columna */
-        align-items: center; /* Centra los elementos en el eje transversal */
-        padding: 50px 20px; /* Ajusta el relleno */
+        flex-direction: column; 
+        align-items: center; 
+        padding: 50px 20px; 
     }
 
 
@@ -257,16 +238,63 @@ footer {
     }
     
     .category {
-        margin-bottom: 20px; /* Agrega espacio entre las categorías */
+        margin-bottom: 20px; 
     }
 
     .category img {
-        width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
-        height: auto; /* Mantiene la proporción de la imagen */
-        max-width: 250px; /* Limita el ancho máximo de la imagen */
-        max-height: 250px; /* Limita la altura máxima de la imagen */
-        border-radius: 20%; /* Mantiene los bordes redondeados */
+        width: 100%; 
+        height: auto; 
+        max-width: 250px; 
+        max-height: 250px; 
+        border-radius: 20%; 
     }
+
+
+    footer {
+        padding: 30px 0; 
+    }
+
+
+    .footer-content {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+
+    .footer-section {
+        flex-basis: auto; 
+        margin-bottom: 20px; 
+    }
+
+    .contactar {
+        margin-top: 0px; 
+    }
+    
+    
+    .contactar textarea {
+        height: 100px; 
+    }
+    
+    
+    .center ul {
+        list-style: none; 
+        padding: 0; 
+    }
+    
+    .center li {
+        margin-top: 10px; 
+    }
+    
+    .center ul li a {
+        color: white; 
+    }
+
+    .footer-bottom {
+        padding-top: 10px; 
+    }
+
+
+
 }
 
 
