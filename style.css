@@ -97,12 +97,15 @@ nav ul li a {
 .container2 {
     display: flex; 
     justify-content: space-between; 
-    padding: 50px 90px;
+    padding: 50px 130px;
     margin: 0;
     background-color: #1e1e1e;
-  
+    
     
 }
+
+
+
 
 .container2 h3{
     color: white;
@@ -112,7 +115,9 @@ nav ul li a {
 .category img {
     max-width: 250px; 
     max-height: 250px;
-    margin: 0;
+    margin-left: 10px;
+   
+
 }
 
 
@@ -123,6 +128,10 @@ nav ul li a {
     background: none;
     cursor: pointer; 
     position: relative;
+    
+    
+    
+    
 }
 
 .category img {
@@ -256,6 +265,8 @@ footer {
 
 
 
+
+
 @media only screen and (max-width: 768px) {
 
 
@@ -313,19 +324,18 @@ footer {
         
     }
 
-    .images{
-        margin-left: 10vw;
-    }
-
+ 
 
     
     .category {
         margin-bottom: 10px; 
+        margin-left: 7vw;
     }
 
     .category img {
         max-width: 100%; 
         height: auto; 
+        
     }
 
 
