@@ -38,14 +38,14 @@ nav ul {
     padding: 0; 
     margin: 0; 
     display: flex; 
-    justify-content: space-between; /* Distribuye los elementos uniformemente */
+    justify-content: space-between; 
     align-items: center; 
 }
 
 nav ul li {
     font-size: 15px;
     padding-right: 2rem;
-    margin-left: 1rem; /* Usar unidades relativas */
+    margin-left: 1rem; 
 }
 
 
@@ -100,6 +100,7 @@ nav ul li a {
     padding: 50px 90px;
     margin: 0;
     background-color: #1e1e1e;
+  
     
 }
 
@@ -253,7 +254,7 @@ footer {
     background-color: #222; 
 }
 
-/* Estilos para dispositivos móviles */
+
 
 @media only screen and (max-width: 768px) {
 
@@ -261,7 +262,7 @@ footer {
     header {
         height: auto;
         width: auto;
-        padding: 10px 20px; /* Reducir el relleno */
+        padding: 10px 20px; 
         position: sticky;
         
     }
@@ -277,7 +278,7 @@ footer {
         padding: 0; 
         margin: 0; 
         display: flex; 
-        justify-content: space-between; /* Distribuye los elementos uniformemente */
+        justify-content: space-between; 
         align-items: center; 
     }
     
@@ -289,14 +290,14 @@ footer {
 
     }
    
-    /* Eliminar el relleno excesivo */
+
     .container1 {
         height: auto;
         width: auto;
         padding: 50px 20px; 
     }
     
-    /* Ajustar el tamaño del texto */
+
     .container1 h2 {
         font-size: 1.5rem; 
     }
@@ -305,11 +306,16 @@ footer {
         font-size: 0.7rem; 
     }
 
-    /* Ajustar márgenes y tamaños de las imágenes */
+ 
     .container2 {
+        margin-left: 10vw;
         padding: 20px; 
+        display: block;
+        
     }
 
+
+    
     .category {
         margin-bottom: 10px; 
     }
@@ -319,7 +325,7 @@ footer {
         height: auto; 
     }
 
-    /* Ajustar márgenes y tamaños de los botones */
+
     .container1 .boton1 {
         padding: 8px 16px; 
         font-size: 0.9rem; 
@@ -351,7 +357,7 @@ footer {
         margin: 0;
         
     }
-    /* Ajustar tamaños de texto y márgenes en el pie de página */
+
     .footer-section {
         padding: 10px; 
     }
