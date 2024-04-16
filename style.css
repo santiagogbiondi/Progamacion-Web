@@ -308,10 +308,13 @@ footer {
 
  
     .container2 {
-        margin-left: 10vw;
         padding: 20px; 
         display: block;
         
+    }
+
+    .images{
+        margin-left: 10vw;
     }
 
 
