@@ -15,12 +15,74 @@
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="#">Acerca de</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="#">Contacto</a></li>
+         
         </ul>
     </nav>
 </header>
 
+<body>
+    <div class="productos-container">
 
+        <div class="producto" data-nombre="Light Baggy Jeans" data-precio="60.00">
+            <h2>Light Blue Baggy Jeans</h2>
+            <img src="images/zarabaggyjeans.jpg" alt="Baggy Jeans">
+            <p class="precio">Precio: <span class="precio-oferta">$60.00</span> <span class="precio-original">$90.00</span></p>
+            <div class="cantidad">
+                <button class="restar">-</button>
+                <span class="cantidad-seleccionada">0</span>
+                <button class="sumar">+</button>
+            </div>
+        </div>
+
+        <div class="producto" data-nombre="Dark Baggy Jeans" data-precio="90.00">
+            <h2>Dark Baggy Jeans</h2>
+            <img src="images/DarkBaggy.jpg" alt="Baggy Jeans">
+            <p class="precio">Precio: $90.00</p>
+            <div class="cantidad">
+                <button class="restar">-</button>
+                <span class="cantidad-seleccionada">0</span>
+                <button class="sumar">+</button>
+            </div>
+        </div>
+
+        <div class="producto" data-nombre="Overdyed Baggy Jeans" data-precio="90.00">
+            <h2>Overdyed Baggy Jeans</h2>
+            <img src="images/overdryedjeans.jpg" alt="Baggy Jeans">
+            <p class="precio">Precio: $90.00</p>
+            <div class="cantidad">
+                <button class="restar">-</button>
+                <span class="cantidad-seleccionada">0</span>
+                <button class="sumar">+</button>
+            </div>
+        </div>
+
+        <div class="producto" data-nombre="Brown Baggy Jeans" data-precio="90.00">
+            <h2>Brown Baggy Jeans</h2>
+            <img src="images/brownjeans.webp" alt="Baggy Jeans">
+            <p class="precio">Precio: $90.00</p>
+            <div class="cantidad">
+                <button class="restar">-</button>
+                <span class="cantidad-seleccionada">0</span>
+                <button class="sumar">+</button>
+            </div>
+        </div>
+
+        
+    </div>
+
+
+    <div id="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="lista-carrito">
+    
+        </ul>
+        <p id="total">Total: $0.00</p>
+        <button id="vaciar-carrito">Vaciar Carrito</button>
+        <button id="comprar">Comprar</button>
+    </div>
+    
+    <script src="carrito.js"></script>
+</body>
 
 </html>

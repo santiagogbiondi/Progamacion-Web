@@ -3,24 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>itbashop.com</title>
+    <title>culturedistrict.com</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap">
-
+    <link rel="stylesheet" href="carrito.css">
 </head>
+<body>
 
-<header>
-    <h1>Culture District</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="#">Acerca de</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+    <header>
+        <h1>Culture District</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+
+      
+    <div class="productos-container">
+        <div class="producto" data-nombre="Yeezy Hoodie" data-precio="230.00">
+            <h2>Yeezy Hoodie</h2>
+            <img src="images/yzyhoodie.jpg" alt="Yeezy Hoodie">
+            <p class="precio">Precio: $230.00</p>
+            <div class="cantidad">
+                <button class="restar">-</button>
+                <span class="cantidad-seleccionada">0</span>
+                <button class="sumar">+</button>
+            </div>
+            
+        </div>
+        
+        <div class="producto" data-nombre="Cactus Jack Hoodie" data-precio="230.00">
+            <h2>Cactus Jack Hoodie</h2>
+            <img src="images/jackhoodie.jpg" alt="Cactus Jack Hoodie">
+            <p class="precio">Precio: $230.00</p>
+            <div class="cantidad">
+                <button class="restar">-</button>
+                <span class="cantidad-seleccionada">0</span>
+                <button class="sumar">+</button>
+            </div>
+        </div>
+
+        <div class="producto" data-nombre="BG T-Shirt" data-precio="420.00">
+            <h2>BB T-Shirt</h2>
+            <img src="images/baltshirt.jpg" alt="BG T-Shirt">
+            <p class="precio">Precio: $420.00</p>
+            <div class="cantidad">
+                <button class="restar">-</button>
+                <span class="cantidad-seleccionada">0</span>
+                <button class="sumar">+</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+   
+   
+    <div id="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="lista-carrito">
+  
         </ul>
-    </nav>
-</header>
+        <p id="total">Total: $0.00</p>
+        <button id="vaciar-carrito">Vaciar Carrito</button>
+        <button id="comprar">Comprar</button>
+    </div>
 
-
-
+    <script src="carrito.js"></script>
+    
+</body>
 </html>
