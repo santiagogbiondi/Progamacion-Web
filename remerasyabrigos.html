@@ -6,16 +6,18 @@
     <title>culturedistrict.com</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="carrito.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap">
 </head>
 <body>
 
     <header>
-        <h1>Culture District</h1>
+        <h1><a href="index.html"><img src="images/Culture_District_LOGO-removebg-preview.png" alt="logo" width="70px" height="55px"></a></h1>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="#">Acerca de</a></li>
                 <li><a href="#">Contacto</a></li>
+                <li><a href="shop.html">Carrito</a></li>
                 
             </ul>
         </nav>
@@ -26,7 +28,8 @@
     <div class="productos-container">
         <div class="producto" data-nombre="Yeezy Hoodie" data-precio="230.00">
             <h2>Yeezy Hoodie</h2>
-            <img src="images/yzyhoodie.jpg" alt="Yeezy Hoodie">
+            <div class="imagen-remyab">
+            <img src="images/yzyhoodie.jpg" alt="Yeezy Hoodie"></div>
             <p class="precio">Precio: $230.00</p>
             <div class="cantidad">
                 <button class="restar">-</button>
@@ -38,7 +41,8 @@
         
         <div class="producto" data-nombre="Cactus Jack Hoodie" data-precio="230.00">
             <h2>Cactus Jack Hoodie</h2>
-            <img src="images/jackhoodie.jpg" alt="Cactus Jack Hoodie">
+            <div class="imagen-remyab">
+            <img src="images/jackhoodie.jpg" alt="Cactus Jack Hoodie"></div>
             <p class="precio">Precio: $230.00</p>
             <div class="cantidad">
                 <button class="restar">-</button>
@@ -49,7 +53,8 @@
 
         <div class="producto" data-nombre="BG T-Shirt" data-precio="420.00">
             <h2>BB T-Shirt</h2>
-            <img src="images/baltshirt.jpg" alt="BG T-Shirt">
+            <div class="imagen-remyab">
+            <img src="images/baltshirt.jpg" alt="BG T-Shirt"></div>
             <p class="precio">Precio: $420.00</p>
             <div class="cantidad">
                 <button class="restar">-</button>
@@ -61,9 +66,6 @@
     </div>
 
 
-
-   
-   
     <div id="carrito">
         <h2>Carrito de Compras</h2>
         <ul id="lista-carrito">

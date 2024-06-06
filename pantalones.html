@@ -10,13 +10,21 @@
 </head>
 
 <header>
-    <h1>Culture District</h1>
+    <h1><a href="index.html"><img src="images/Culture_District_LOGO-removebg-preview.png" alt="logo" width="70px" height="55px"></a></h1>
     <nav>
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="#">Acerca de</a></li>
             <li><a href="#">Contacto</a></li>
-         
+            <li>
+                <a href="#" id="carrito-link">Carrito (<span id="cantidad-productos-carrito">0</span>)</a>
+                <div id="carrito-desplegable" class="carrito-desplegable">
+                    <ul id="lista-carrito-desplegable">
+                        <!-- Productos del carrito -->
+                    </ul>
+                    <p id="total-desplegable">Total: $0.00</p>
+                </div>
+            </li>
         </ul>
     </nav>
 </header>
@@ -26,7 +34,8 @@
 
         <div class="producto" data-nombre="Light Baggy Jeans" data-precio="60.00">
             <h2>Light Blue Baggy Jeans</h2>
-            <img src="images/zarabaggyjeans.jpg" alt="Baggy Jeans">
+            <div class="imagen-pantalones">
+            <img src="images/zarabaggyjeans.jpg" alt="Baggy Jeans"></div>
             <p class="precio">Precio: <span class="precio-oferta">$60.00</span> <span class="precio-original">$90.00</span></p>
             <div class="cantidad">
                 <button class="restar">-</button>
@@ -37,7 +46,8 @@
 
         <div class="producto" data-nombre="Dark Baggy Jeans" data-precio="90.00">
             <h2>Dark Baggy Jeans</h2>
-            <img src="images/DarkBaggy.jpg" alt="Baggy Jeans">
+            <div class="imagen-pantalones">
+            <img src="images/DarkBaggy.jpg" alt="Baggy Jeans"></div>
             <p class="precio">Precio: $90.00</p>
             <div class="cantidad">
                 <button class="restar">-</button>
@@ -48,7 +58,8 @@
 
         <div class="producto" data-nombre="Overdyed Baggy Jeans" data-precio="90.00">
             <h2>Overdyed Baggy Jeans</h2>
-            <img src="images/overdryedjeans.jpg" alt="Baggy Jeans">
+            <div class="imagen-pantalones">
+            <img src="images/overdryedjeans.jpg" alt="Baggy Jeans"></div>
             <p class="precio">Precio: $90.00</p>
             <div class="cantidad">
                 <button class="restar">-</button>
@@ -59,7 +70,8 @@
 
         <div class="producto" data-nombre="Brown Baggy Jeans" data-precio="90.00">
             <h2>Brown Baggy Jeans</h2>
-            <img src="images/brownjeans.webp" alt="Baggy Jeans">
+            <div class="imagen-pantalones">
+            <img src="images/brownjeans.webp" alt="Baggy Jeans"></div>
             <p class="precio">Precio: $90.00</p>
             <div class="cantidad">
                 <button class="restar">-</button>
