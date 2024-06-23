@@ -462,7 +462,6 @@ footer {
 
 
 
-/* Estilos del carrito desplegable */
 .carrito-desplegable {
     position: absolute;
     right: 10px;
@@ -521,6 +520,26 @@ footer {
 #carrito-link {
     position: relative;
     cursor: pointer;
+}
+
+form button.btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button.btn:hover {
+    background-color: #600073;
+}
+
+.footer-section.contactar{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 
