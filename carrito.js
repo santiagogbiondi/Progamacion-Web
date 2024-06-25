@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function() {
     const productos = document.querySelectorAll('.producto');
     const carrito = document.getElementById('carrito');
@@ -9,7 +8,8 @@ document.addEventListener("DOMContentLoaded", function() {
     function guardarCarritoEnLocalStorage() {
         const items = Array.from(listaCarrito.children).map(item => ({
             nombre: item.dataset.nombre,
-            cantidad: item.querySelector('.cantidad-item').textContent
+            cantidad: item.querySelector('.cantidad-item').textContent.split(': ')[1],
+            precio: item.dataset.precio
         }));
         localStorage.setItem('carrito', JSON.stringify({ items, totalCompra }));
     }
@@ -22,7 +22,14 @@ document.addEventListener("DOMContentLoaded", function() {
             data.items.forEach(item => {
                 const nuevoItem = document.createElement('li');
                 nuevoItem.dataset.nombre = item.nombre;
-                nuevoItem.innerHTML = `${item.nombre} - <span class="cantidad-item">${item.cantidad}</span>`;
+                nuevoItem.dataset.precio = item.precio;
+                nuevoItem.innerHTML = `
+                    ${item.nombre} - 
+                    <span class="cantidad-item">Cantidad: ${item.cantidad}</span> - 
+                    <span class="precio-unitario">Precio Unitario: $${parseFloat(item.precio).toFixed(2)}</span> - 
+                    <span class="precio-total">Precio Total: $${(parseFloat(item.precio) * parseInt(item.cantidad)).toFixed(2)}</span>
+                    <button class="borrar-item">X</button>
+                `;
                 listaCarrito.appendChild(nuevoItem);
             });
             if (totalCompra > 0) {
@@ -57,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const itemExistente = Array.from(listaCarrito.children).find(item => item.dataset.nombre === nombre);
         let nuevaCantidad = cambio;
         if (itemExistente) {
-            nuevaCantidad += parseInt(itemExistente.querySelector('.cantidad-item').textContent);
+            nuevaCantidad += parseInt(itemExistente.querySelector('.cantidad-item').textContent.split(': ')[1]);
         }
         if (nuevaCantidad < 0) {
             return; 
@@ -68,11 +75,19 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         } else {
             if (itemExistente) {
-                itemExistente.querySelector('.cantidad-item').textContent = nuevaCantidad;
+                itemExistente.querySelector('.cantidad-item').textContent = `Cantidad: ${nuevaCantidad}`;
+                itemExistente.querySelector('.precio-total').textContent = `Precio Total: $${(precio * nuevaCantidad).toFixed(2)}`;
             } else {
                 const nuevoItem = document.createElement('li');
                 nuevoItem.dataset.nombre = nombre;
-                nuevoItem.innerHTML = `${nombre} - <span class="cantidad-item">${nuevaCantidad}</span>`;
+                nuevoItem.dataset.precio = precio;
+                nuevoItem.innerHTML = `
+                    ${nombre} - 
+                    <span class="cantidad-item">Cantidad: ${nuevaCantidad}</span> - 
+                    <span class="precio-unitario">Precio Unitario: $${precio.toFixed(2)}</span> - 
+                    <span class="precio-total">Precio Total: $${(precio * nuevaCantidad).toFixed(2)}</span>
+                    <button class="borrar-item">X</button>
+                `;
                 listaCarrito.appendChild(nuevoItem);
             }
         }
@@ -87,6 +102,18 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         guardarCarritoEnLocalStorage();
     }
+
+    listaCarrito.addEventListener('click', function(event) {
+        if (event.target.classList.contains('borrar-item')) {
+            const item = event.target.parentElement;
+            const precio = parseFloat(item.dataset.precio);
+            const cantidad = parseInt(item.querySelector('.cantidad-item').textContent.split(': ')[1]);
+            totalCompra -= precio * cantidad;
+            total.textContent = `Total: $${totalCompra.toFixed(2)}`;
+            listaCarrito.removeChild(item);
+            guardarCarritoEnLocalStorage();
+        }
+    });
 
     document.getElementById("vaciar-carrito").addEventListener("click", function() {
         listaCarrito.innerHTML = "";
@@ -112,18 +139,9 @@ document.addEventListener("DOMContentLoaded", function() {
     cargarCarritoDeLocalStorage();
 });
 
-document.getElementById("comprar").addEventListener("click", function() {
-    if (totalCompra === 0) {
-        alert("El carrito está vacío.");
-    } else {
-        alert("¡Compra realizada!");
-        listaCarrito.innerHTML = "";
-        totalCompra = 0;
-        total.textContent = "Total: $0.00";
-        carrito.classList.add('oculto');
-        localStorage.removeItem('carrito');
-    }
-});
+
+
+
 
 
 
